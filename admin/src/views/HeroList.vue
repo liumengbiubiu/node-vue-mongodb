@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>分类列表</h1>
+        <h1>英雄列表</h1>
         <el-table :data="items">
             <el-table-column
                 prop="_id"
@@ -11,7 +11,7 @@
             <el-table-column prop="name" label="英雄名称"></el-table-column>
             <el-table-column prop="avatar" label="头像">
                 <template slot-scope="scope">
-                    <img :src="scope.row.icon" alt="" style="height: 3rem" />
+                    <img :src="scope.row.avatar" alt="" style="height: 3rem" />
                 </template>
             </el-table-column>
             <el-table-column fixed="right" label="操作" width="100">
